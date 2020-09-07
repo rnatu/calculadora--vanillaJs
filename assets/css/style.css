@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1E2326;
+}
+
+form {
+    box-shadow: 0 0 10px black;
+}
+
+
+
+.calculator {
+    user-select: none;
+    position: relative;
+    display: grid;
+    
+}
+
+
+.calculator .history {
+    grid-column: span 4;
+    height: 20px;
+    text-align: right;
+    /* border: none; */
+    border-top: 1px solid #5E4BB6;
+    border-left: 1px solid #5E4BB6;
+    border-right: 1px solid #5E4BB6;
+    border-bottom: none;
+    outline: none;
+    padding: 5px;
+    font-size: 12px;
+    pointer-events:none;
+    letter-spacing: 2px;
+    padding-top: 15px;
+}
+
+.calculator .display {
+    grid-column: span 4;
+    height: 70px;
+    text-align: right;
+    /* border: none; */
+    border-bottom: 1px solid #5E4BB6;
+    border-left: 1px solid #5E4BB6;
+    border-right: 1px solid #5E4BB6;
+    border-top: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.calculator span {
+    cursor: pointer;
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background:#1E2326;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.calculator span:active {
+    background: #1a1f20;
+    color: #fff;
+}
+
+.calculator span.btn-clear{
+    grid-column:  span 2;
+    width: 120px;
+}
+
+.calculator span.btn-equal {
+    background:#FDC405;
+    grid-column: span 2;
+    width: 120px;
+}
+
+.calculator span.btn-equal:hover {
+    background:#daa805;
+    
+}
+.calculator span.math{
+    background: #5E4BB6
+}
